@@ -94,7 +94,7 @@ p {
     box-shadow: 10px black;
 }
 .sticky + .content {
-    padding-top: 20px;
+    padding-top: 60px;
 }
 .Footer {
     width: 100%;

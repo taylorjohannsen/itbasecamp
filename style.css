@@ -76,6 +76,7 @@ html {
     margin-top: 10px;
     font-family: 'Heebo';
     font-size: 22px;
+    word-spacing: 1px;
 }
 .h1 {
     font-size: 30px;
@@ -94,7 +95,7 @@ p {
     box-shadow: 10px black;
 }
 .sticky + .content {
-    padding-top: 60px;
+    padding-top: 55px;
 }
 .Footer {
     width: 100%;
@@ -132,9 +133,19 @@ p {
     padding: 10px;
     font-size: 16px !important; 
     margin-right: 20px;
+    margin-top: 20px;
 }
 .linkButtons:hover {
     color: black;
+}
+.dFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.introHead {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./photos/youtitdeptglasses.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
     <title>IT Basecamp</title>
 </head>
 
@@ -24,22 +26,23 @@
         <a class="textDec" href="./misc.html"><div class="navLinks">Miscellaneous</div></a>
     </div>
 </div>
-<div class="marWrap">
+<div id="marWrap" class="marWrap">
     <div class="mountCont">
-        <div class="Mountain">IT Basecamp</div>
+        <a href="index.html" class="textDec"><div class="Mountain">IT Basecamp</div></a>
     </div>
     <div class="mainMargins">
         <div class="helloWorld">
-            <div class="h1">Everything else!</div>
-            <a class="textDec linkButtons" onclick="fillEverest(0)" href="javascript:void(0);"> 1 - New Agent Setup</a>
-            <a class="textDec linkButtons" onclick="fillEverest(1)" href="javascript:void(0);"> 2 - Agent Termination</a>
+            <div class="h1">Everything Else!</div>
+            <div id="butOne"></div>
         </div>
         <br>
     </div>
     <div class="mainMargins">
         <div class="helloWorld">
             <br>
-            <div id="mainText">Click a button for instructions!</div>
+            <div>
+                <div id="app">Click a button for instructions of the process!</div>
+            </div>
         </div>
         <br>
     </div>
@@ -47,10 +50,11 @@
 <footer>
     <div class="Footer">
         <div class="footCont">
-        <a class="textDec" href="#top"><div class="goUp">Back to top ↑</div></a>
-        <a class="textDec" href="https://github.com/taylorjohannsen"><div class="myName">Made by Taylor Johannsen</div>
-        </div>
+            <a class="textDec" href="#top"><div class="goUp">Back to top ↑</div></a>
+            <a class="textDec" href="https://github.com/taylorjohannsen"><div class="myName">Made by Taylor Johannsen</div>
+            </div>
     </div>
 </footer>
+<script type="text/babel" src="./misc.js"></script>
 </body>
 </html>

@@ -48,7 +48,7 @@ class LoggingButton extends React.Component {
 
     render() {
         return [
-            <div>
+            <div class="dFlex">
             <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - Finding a 21Online Username</a>
             <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Terminating in Zap and LeadRouter</a>
             </div>

@@ -44,12 +44,7 @@ class LoggingButton extends React.Component {
     agentTerm() {
         const agentTermCode = (
             <div>
-                <h1>Agent Terminations:</h1>
-                <p>Property minder unlink and delete account</p>
-                <p>circlepix select user and deactivate account</p>
-                <p>homes connect remove agent seat and delete account</p>
-                <p>active directory Remove account in admin.troopsolutions.com</p>
-                <p>skyslope deactivate user in profile</p>
+                <p class="introHead">Agent Termination Checklist: </p>
             </div>
         )        
         ReactDOM.unmountComponentAtNode;
@@ -57,14 +52,14 @@ class LoggingButton extends React.Component {
     }
     printerInstall() {
         const printerInstallCode = (
-            <p>//trp-simi click the printer</p>
+            <p class="introHead">Branch Printer Installations: </p>
         )    
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(printerInstallCode, document.getElementById('app'));
     }
     agentStatus() {
         const agentStatusCode = (
-            <p>same as term but keep groups lul</p>
+            <p class="introHead">Agent Status Change Checklist: </p>
         )
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(agentStatusCode, document.getElementById('app'));

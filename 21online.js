@@ -24,29 +24,24 @@ $(document).ready(function() {
 });
 
 
-let newAgentCode = (
-    <p>1 - Create Office365 Mail User account, give them multiple aliases,
-    put them in the correct groups -
-    Give them mail contact profiles in AVE O365</p>
-)
 
-let agentTermCode = (
-    <div>
-        <p>Agent Terminations:</p>
-        <p>Property minder unlink and delete account</p>
-        <p>circlepix select user and deactivate account</p>
-        <p>homes connect remove agent seat and delete account</p>
-        <p>active directory Remove account in admin.troopsolutions.com</p>
-        <p>skyslope deactivate user in profile</p>
-    </div>
-)
+
+
 
 class LoggingButton extends React.Component {
     newAgent() {
+        const newAgentCode = (
+            <p class="introHead">Find a 21Online Username: </p>
+        )
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(newAgentCode, document.getElementById('app'));
     }
     agentTerm() {
+        const agentTermCode = (
+            <div>
+                <p class="introHead">Terminating in Zap and LeadRouter: </p>
+            </div>
+        )
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(agentTermCode, document.getElementById('app'));
     }
@@ -54,8 +49,8 @@ class LoggingButton extends React.Component {
     render() {
         return [
             <div>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - New Agent</a>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Agent Termination</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - Finding a 21Online Username</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Terminating in Zap and LeadRouter</a>
             </div>
         ];
     }

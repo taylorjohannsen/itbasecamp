@@ -24,38 +24,43 @@ $(document).ready(function() {
 });
 
 
-let newAgentCode = (
-    <p>1 - Create Office365 Mail User account, give them multiple aliases,
-    put them in the correct groups -
-    Give them mail contact profiles in AVE O365</p>
-)
 
-let agentTermCode = (
-    <div>
-        <p>Agent Terminations:</p>
-        <p>Property minder unlink and delete account</p>
-        <p>circlepix select user and deactivate account</p>
-        <p>homes connect remove agent seat and delete account</p>
-        <p>active directory Remove account in admin.troopsolutions.com</p>
-        <p>skyslope deactivate user in profile</p>
-    </div>
-)
 
 class LoggingButton extends React.Component {
     newAgent() {
+        const newAgentCode = (
+            <div>
+                <p class="introHead">New User Setup: </p>
+            </div>
+        )        
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(newAgentCode, document.getElementById('app'));
     }
     agentTerm() {
+        const agentTermCode = (
+            <div>
+                <p class="introHead">How to join the AVE Domain: </p>
+            </div>
+        )        
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(agentTermCode, document.getElementById('app'));
+    }
+    streamInstall() {
+        const streamInstallCode = (
+            <div>
+                <p class="introHead">How to install Streamline: </p>
+            </div>
+        )
+        ReactDOM.unmountComponentAtNode;
+        ReactDOM.render(streamInstallCode, document.getElementById('app'));
     }
 
     render() {
         return [
             <div>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - New Agent</a>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Agent Termination</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - New User Setup</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Joining the Domain</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="three" onClick={(e) => this.streamInstall(e)}>3 - Installing Streamline</a>
             </div>
         ];
     }

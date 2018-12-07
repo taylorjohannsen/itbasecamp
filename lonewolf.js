@@ -24,40 +24,56 @@ $(document).ready(function() {
 });
 
 
-let newAgentCode = (
-    <p>1 - Create Office365 Mail User account, give them multiple aliases,
-    put them in the correct groups -
-    Give them mail contact profiles in AVE O365</p>
-)
 
-let agentTermCode = (
-    <div>
-        <p>Agent Terminations:</p>
-        <p>Property minder unlink and delete account</p>
-        <p>circlepix select user and deactivate account</p>
-        <p>homes connect remove agent seat and delete account</p>
-        <p>active directory Remove account in admin.troopsolutions.com</p>
-        <p>skyslope deactivate user in profile</p>
-    </div>
-)
+
 
 class LoggingButton extends React.Component {
     newAgent() {
+        const newAgentCode = (
+            <div>
+                <p class="introHead">Pushing a Listing through BrokerWolf: </p>
+            </div>
+        )        
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(newAgentCode, document.getElementById('app'));
     }
     agentTerm() {
+        const agentTermCode = (
+            <div>
+                <p class="introHead">Updating an Everest Agent in BrokerWolf: </p>
+            </div>
+        )
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(agentTermCode, document.getElementById('app'));
+    }
+    wcReport() {
+        const wcReportCode = (
+            <div>
+                <p class="introHead">Running a WolfConnect MLSID Report and Adding them: </p>
+            </div>
+        )
+        ReactDOM.unmountComponentAtNode;
+        ReactDOM.render(wcReportCode, document.getElementById('app'));
+    }
+    opAdd() {
+        const opAddCode = (
+            <div>
+                <p class="introHead">Adding an Open House in BrokerWolf: </p>
+            </div>
+        )        
+        ReactDOM.unmountComponentAtNode;
+        ReactDOM.render(opAddCode, document.getElementById('app'));
     }
 
     render() {
         return [
-            <div>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - New Agent</a>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Agent Termination</a>
+            <div class="dFlex">
+            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - Pushing Listings in BW</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Updating an Everest Agent</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="three" onClick={(e) => this.wcReport(e)}>3 - WolfConnect MLSID Report and ID Addition</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="four" onClick={(e) => this.opAdd(e)}>4 - Open House Addition</a>
             </div>
-        ];
+        ]; 
     }
 }
 

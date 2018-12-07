@@ -24,42 +24,45 @@ $(document).ready(function() {
 });
 
 
-let newAgentCode = (
-    <p>1 - Create Office365 Mail User account, give them multiple aliases,
-    put them in the correct groups -
-    Give them mail contact profiles in AVE O365</p>
-)
-
-let agentTermCode = (
-    <div>
-        <p>Agent Terminations:</p>
-        <p>Property minder unlink and delete account</p>
-        <p>circlepix select user and deactivate account</p>
-        <p>homes connect remove agent seat and delete account</p>
-        <p>active directory Remove account in admin.troopsolutions.com</p>
-        <p>skyslope deactivate user in profile</p>
-    </div>
-)
-
 class LoggingButton extends React.Component {
     newAgent() {
+        const newAgentCode = (
+            <div>
+                <p class="introHead">Adding O365 Mail to an iPhone: </p>
+            </div>
+        )
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(newAgentCode, document.getElementById('app'));
     }
     agentTerm() {
+        const agentTermCode = (
+            <div>
+                <p class="introHead">Adding O365 Mail to an Android: </p>
+            </div>
+        )        
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(agentTermCode, document.getElementById('app'));
+    }
+    scanFile() {
+        const scanFileCode = (
+            <div>
+                <p class="introHead">Sending a Scan File to AVE: </p>
+            </div>
+        )
+        ReactDOM.unmountComponentAtNode;
+        ReactDOM.render(scanFileCode, document.getElementById('app'));
     }
 
     render() {
         return [
-            <div>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - New Agent</a>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Agent Termination</a>
+            <div class="dFlex">
+            <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - Adding Everest Mail to a iPhone</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Adding Everest Mail to an Android</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.scanFile(e)}>3 - Finding a file on the Scan PC for AVE</a>
             </div>
         ];
     }
 }
 
-  ReactDOM.render(<LoggingButton />, document.getElementById('butOne'));
+ReactDOM.render(<LoggingButton />, document.getElementById('butOne'));
 

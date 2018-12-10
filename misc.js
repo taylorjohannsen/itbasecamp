@@ -61,6 +61,14 @@ class LoggingButton extends React.Component {
         const scanFileCode = (
             <div>
                 <p class="introHead">Sending a Scan File to AVE: </p>
+                <p>1 - Got to 'Documents'</p>
+                <p>2 - Open the G: Drive</p>
+                <p>3 - Open the All Valley Escrow folder </p>
+                <p>4 - Go to the box number the file is in (if box number is provided</p>
+                <p>5 - Open email and attach the requested file</p>
+                <p>If there is not a box number provided -
+                Open the excell sheet labeled 'AVE incoming log and do a search using the file number. It will show you which box the file is in. 
+                </p>
             </div>
         )
         ReactDOM.unmountComponentAtNode;

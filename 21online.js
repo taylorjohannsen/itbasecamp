@@ -31,7 +31,10 @@ $(document).ready(function() {
 class LoggingButton extends React.Component {
     newAgent() {
         const newAgentCode = (
-            <p class="introHead">Find a 21Online Username: </p>
+            <div>
+                <p class="introHead">Find a 21Online Username: </p>
+                <p>1 - First you will login to 21Online.com using our admin account. Once in you want to select "dash" from the Tool Library. Here is where you will make most changes to Agent profile information and listings. Once in you want to select "People" on the left side, type in their name in the search bar and click on their name once found. Scroll down to Brand Login ID, this is the agent's login email for 21Online.</p>
+            </div>    
         )
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(newAgentCode, document.getElementById('app'));
@@ -40,6 +43,8 @@ class LoggingButton extends React.Component {
         const agentTermCode = (
             <div>
                 <p class="introHead">Terminating in Zap and LeadRouter: </p>
+                <p>1 - Zap - Zap is rather easy to terminate. Login to Zap through the portal on 21Online under Tool Library. At the top bar, select "Personell", then type in the Agent's name. Click on their name once found and slide the green slider that "Displays on Website" to off.</p>
+                <p>2 - LeadRouter - Getting here is the pretty much the same as Zap. Login in to 21Online, select LeadRouter in the Tool Library and you will be re-directed. Hover over "LeadRouter Settings" in the navigation bar, and select "Users." Search for the Agent's name, and select Edit. The edit information box will pop up, on the left side under "Status and Flags" uncheck all boxes. A Termination information box will pop up, add the reason (terminated), date, and initials to the box. Hit save in the bottom right. </p>
             </div>
         )
         ReactDOM.unmountComponentAtNode;

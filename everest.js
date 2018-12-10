@@ -137,7 +137,11 @@ class LoggingButton extends React.Component {
     }
     printerInstall() {
         const printerInstallCode = (
-            <p class="introHead">Branch Printer Installations: </p>
+            <div>
+                <p class="introHead">Branch Printer Installations: </p>
+                <p>1 - HPLJ 600 - This is the default printer in the Everest branches. You can find the easy install by hitting the Printer Server for the branch (You can ask a coworker for the server names). Once on the server, just double-click the shared Black and White Printers.</p>
+                <p>2 - Konica Minolta - These are our color copiers, the drivers are usually found on the server, under a shared folder called either "Printer Drivers" or "Copier Drivers." Once found, you can run the Setup64.exe to install the color printer. Once done, navigate to the printer and right click to find "Printer Preferences", here you will select 1 sided printing, then under the "Basic Tab", you will select "Account Track", and input their 4 Digit printing code, which you can get from the OA.</p>
+            </div>
         )    
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(printerInstallCode, document.getElementById('app'));

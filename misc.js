@@ -66,13 +66,38 @@ class LoggingButton extends React.Component {
         ReactDOM.unmountComponentAtNode;
         ReactDOM.render(scanFileCode, document.getElementById('app'));
     }
+    makeFile() {
+        const makeFileCode = (
+            <div>
+                <p class="introHead">Creating a Flash Drive for Scanning: </p>
+                <p>1 - Check 201X Log sheet saved to desktop for relevant listing to see which need to be made.</p>
+                <p>2 - Open Skyslope, and access archives. Search by street number (confirmed closed date here if multiple entrys).</p>
+                <p>3 - Click checklist documents under download and it will save the file to downloads folder.</p>
+                <p>4 - Double click listing name to select listing. Click checklist at the top of the page.</p>
+                <p>5 - Open Label Template from desktop on Scan PC., use the Skyslope file to fill in the template. Label should be filled out as follows:</p>
+                <div>FIRST NAME LAST NAME</div>
+                <div>MAIL DISC TO ADDRESS</div>
+                <div>CITY, STATE ZIP</div>
+                <p>6 - Get skyslope file from downloads folder then right click and extract all.</p>
+                <p>7 - Delete files based on the buyer/ seller checklist located under Scanners's desk.</p>
+                <p>8 - Note that an agent can represent both sides of a deal and the file may be combined buyer and seller in which case
+                two disks will need to be made and logged separately on the log sheet.</p>
+                <p>9 - Highlight all remaining files in the folder and right click and select combine in acrobrat.</p>
+                <p>10 - Saved the combined file as StreetName Buyer/ Seller in Skyslope folder</p>
+                <p>11 - Insert flash drive and open the skyslope folder. Save the newly made file to the flash drive and then eject when complete</p>
+            </div>
+        )
+        ReactDOM.unmountComponentAtNode;
+        ReactDOM.render(makeFileCode, document.getElementById('app'));
+    }
 
     render() {
         return [
             <div class="dFlex">
             <a class="textDec linkButtons" href="javascript:void(0);" key="one" onClick={(e) => this.newAgent(e)}>1 - Adding Everest Mail to a iPhone</a>
             <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.agentTerm(e)}>2 - Adding Everest Mail to an Android</a>
-            <a class="textDec linkButtons" href="javascript:void(0);" key="two" onClick={(e) => this.scanFile(e)}>3 - Finding a file on the Scan PC for AVE</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="three" onClick={(e) => this.scanFile(e)}>3 - Finding a file on the Scan PC for AVE</a>
+            <a class="textDec linkButtons" href="javascript:void(0);" key="four" onClick={(e) => this.makeFile(e)}>4 - Create a Flash Drive for Scanning</a>
             </div>
         ];
     }
